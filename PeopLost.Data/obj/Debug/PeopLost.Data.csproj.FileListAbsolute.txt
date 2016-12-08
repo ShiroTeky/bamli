@@ -1,0 +1,9 @@
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\PeopLost.Data.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\PeopLost.Data.pdb
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\EntityFramework.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\PeopLost.Core.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\PeopLost.Core.pdb
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\EntityFramework.xml
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\obj\Debug\PeopLost.Data.csprojResolveAssemblyReference.cache
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\obj\Debug\PeopLost.Data.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\obj\Debug\PeopLost.Data.pdb

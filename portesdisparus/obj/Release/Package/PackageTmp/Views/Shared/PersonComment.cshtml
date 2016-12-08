@@ -1,0 +1,28 @@
+﻿@model PeopLost.Web.Models.AlertModels
+
+
+<div class="panel">
+    <ul>
+        <li>
+            <button class="btn btn-info" id="edit-post"><i title="edit" class="glyphicon glyphicon-edit"></i></button>
+            <span id="field-post"></span>
+        </li>
+        @foreach (var item in Model.Comments)
+        {
+            @*<li> @item.FirstName @item.LastName</li>
+            <li>
+                <a href="#"><img height="99" width="99" src="@item.ImageUrl" /></a>
+            </li>*@
+            <li>
+
+                <div>@item.Post</div>
+                
+            </li>
+            
+        }
+        
+    </ul>
+
+  
+</div>
+  

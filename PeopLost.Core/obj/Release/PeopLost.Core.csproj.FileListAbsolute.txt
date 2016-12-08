@@ -1,0 +1,5 @@
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Core\bin\Release\PeopLost.Core.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Core\bin\Release\PeopLost.Core.pdb
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Core\obj\Release\PeopLost.Core.csprojResolveAssemblyReference.cache
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Core\obj\Release\PeopLost.Core.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Core\obj\Release\PeopLost.Core.pdb

@@ -1,0 +1,51 @@
+﻿@model System.Collections.Generic.IList<PeopLost.Core.Domain.Members.Member>
+@{
+    ViewBag.Title = "Members";
+}
+
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <div class="col-md-offset-8">
+            @using (Ajax.BeginForm("Members", "Admin", new AjaxOptions() { HttpMethod = "Get", InsertionMode = InsertionMode.Replace }))
+            {
+                <span>
+                    <input type="search" placeholder="Tape the name here" name="personname" id="personname" />
+                    <input type="submit" id="btsearch" class="btn btn-primary" value="search" /> @Html.ActionLink(" ", "Members", null, new { @class = "glyphicon glyphicon-refresh" })
+                </span>
+            }
+        </div>
+        <table class="table table-striped table-hover">
+
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BirthDay)
+                    </td>
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Commune)
+                    </td>
+
+                    <td>
+                        <a href="~/Admin/Member?MemberId=@item">
+                            <img width="80" height="80" src="@item.ImageUrl" />
+                        </a>
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

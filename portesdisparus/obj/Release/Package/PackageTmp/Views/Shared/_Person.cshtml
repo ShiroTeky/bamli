@@ -1,0 +1,142 @@
+﻿@model PeopLost.Web.Models.AlertModels
+
+
+<div class="box box-widget">
+
+    <div class="box-header with-border">
+        <div class="user-block">
+            <img class="img-circle" src="@Model.Member.ImageUrl" alt="User Image">
+            <span class="username"><a href="#">@Model.Member.UserName</a></span>
+            <span class="description">@Model.DateAlert</span>
+      
+        </div>
+        <!-- /.user-block -->
+        <div class="box-tools">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                <i class="fa fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <!-- /.box-tools -->
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        <div class="col-md-4">
+            @*<img class="img-responsive pad" width="300" height="200" src="@Model.Person.ImageUrl" alt="Photo">*@
+            <img class="img-responsive pad" width="300" height="200" src="~/Images/fabriceassemien.jpg" alt="Photo">
+        
+        </div>
+            <!--Ajouter icone de signaler-->
+        <div class="col-md-6">
+            <p>
+                <h2>@Model.Person.FirstName @Model.Person.LastName </h2>
+                <h4>Age :@Model.Person.YearsOld ans</h4>
+                <span>Lost the @Model.DayDisappear to @Model.LooserAddress </span>
+                <div>
+                    Caracteristics
+                    <ul class="list-unstyled">
+                        <li>@Model.Person.Caracteristics</li>
+                        <li>Country: @Model.Person.Country | Town: @Model.Person.City</li>
+                    </ul>
+                </div>
+            </p>
+            <span>Comment : @Model.Post </span>
+            <p>Contact:<i class="glyphicon glyphicon-phone"></i><a href="#">@Model.Member.Phone</a></p>
+            @if (Request.IsAuthenticated)
+            {
+                <button type="button" class="btn btn-default btn-xs">
+                    @Html.ActionLink("Concrete/No", "ValidAlert", "Admin", new { AlertId = Model.AlertId }, new { @class = "fa fa-times" })
+                </button>
+                <button type="button" class="btn btn-default btn-xs">
+                    @Html.ActionLink("Found/No", "ValidFound", "Admin", new { AlertId = Model.AlertId }, new { @class = "fa fa-times" })
+                </button>
+                <button type="button" class="btn btn-default btn-xs">
+                    @Html.ActionLink("Comment", "Item", "Alert", new { AlertId = Model.AlertId }, new { @class = "glyphicon glyphicon-comment" })
+                </button>
+            }
+        </div>
+        <div class="col-md-2">
+            @if (Model.Found ==true)
+            {
+                <span class="glyphicon glyphicon-ok" style="color:#1d76d7;">Found</span>
+
+            }
+            else
+            {
+                <span class="glyphicon glyphicon-remove" style="color:#1d76d7;">Not Found</span>
+            }
+        </div>
+     </div>
+</div>
+
+<script type="text/javascript">
+
+    function displaymodal() {
+        $('.modal').show();
+        $('#map').css('display', 'block');
+        var newMarkers = new Array();
+        initMap();
+        // Where all the fun happens
+    }
+
+    function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 5.865427, lng: -4.196123 },
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.G_NORMAL_MAP
+        });
+
+        // Get new position
+        map.addListener('click', function (e) {
+            placeMarkerAndPanTo(e.latLng, map);
+        });
+
+        // a sample list of JSON encoded data of places to visit in Tunisia
+        // you can either make up a JSON list server side, or call it from a controller using JSONResult
+        // Using the JQuery "each" selector to iterate through the JSON list and drop marker pins
+
+        $.getJSON('@Url.Action("GetPersonPoint", "Alert", new { PersonId = @Model.Person.PersonId })')
+        .done(function (data) {
+
+            // This makes the div with id "map_canvas" a google map
+            //var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+            for (var i = 0; i < data.length; i++) {
+                var lat = data[i].Latitude;
+                var lng = data[i].Longitude;
+
+                var latLng = new google.maps.LatLng(lat, lng);
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: data[i].CurrentAddress
+                });
+                marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+                var infowindow = new google.maps.InfoWindow({
+                    content: "<div class='infoDiv'><h2>" + data[i].CurrentAddress + "</h2></div>"
+                });
+
+                // finally hook up an "OnClick" listener to the map so it pops up out info-window when the marker-pin is clicked!
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+            }
+        })
+        .fail(function (jqXHR, textStatus, err) {
+            alert("Message: " + err);
+            alert("StackTrace: " + textStatus);
+        });
+    }
+    // Set the new marker on the map
+    function placeMarkerAndPanTo(latLng, map) {
+        var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+        });
+        map.panTo(latLng);
+        newMarkers.push(latLng);
+    }
+</script>

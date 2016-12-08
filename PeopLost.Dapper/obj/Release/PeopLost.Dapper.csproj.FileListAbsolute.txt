@@ -1,0 +1,14 @@
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\PeopLost.Dapper.dll.config
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\PeopLost.Dapper.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\PeopLost.Dapper.pdb
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\Dapper.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\PeopLost.Core.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\PeopLost.Data.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\EntityFramework.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\PeopLost.Core.pdb
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\PeopLost.Data.pdb
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\Dapper.xml
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\bin\Release\EntityFramework.xml
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\obj\Release\PeopLost.Dapper.csprojResolveAssemblyReference.cache
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\obj\Release\PeopLost.Dapper.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Dapper\obj\Release\PeopLost.Dapper.pdb

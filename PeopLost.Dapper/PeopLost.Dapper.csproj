@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C97B421C-708D-490A-9903-6C7330686D03}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PeopLost.Dapper</RootNamespace>
+    <AssemblyName>PeopLost.Dapper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alertes\AlertRepository.cs" />
+    <Compile Include="AlertUtils.cs" />
+    <Compile Include="CommentUtils.cs" />
+    <Compile Include="Towns\TownRepository.cs" />
+    <Compile Include="Countries\CountryRepository.cs" />
+    <Compile Include="Comments\CommentRepository.cs" />
+    <Compile Include="Connection.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Connection.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Data\IAggregateRoot.cs" />
+    <Compile Include="Core\Data\IReadOnlyRepository.cs" />
+    <Compile Include="Core\Data\IRepositoryDapper.cs" />
+    <Compile Include="Core\Data\IValidatable.cs" />
+    <Compile Include="Core\EntityBaseDapper.cs" />
+    <Compile Include="Core\ValidationError.cs" />
+    <Compile Include="Core\ValidationErrors.cs" />
+    <Compile Include="Maps\PersonPointGeoRepository.cs" />
+    <Compile Include="Members\MemberRepository.cs" />
+    <Compile Include="Persons\PersonRepository.cs" />
+    <Compile Include="Pictures\PictureRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PeopLost.Core\PeopLost.Core.csproj">
+      <Project>{6c9a3f37-a166-48a4-9b76-80f5b8fbd20f}</Project>
+      <Name>PeopLost.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PeopLost.Data\PeopLost.Data.csproj">
+      <Project>{6abaeb8f-a47c-44da-adbe-1f3ff32c8912}</Project>
+      <Name>PeopLost.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Connection.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Connection.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,88 @@
+﻿
+<div>
+    <img class="img-responsive img-circle img-sm" src='@Session["photourl"]' alt="Alt Text">
+    <!-- .img-push is used to add margin to elements next to floating images -->
+    <div class="img-push">
+        <span class="form-inline">
+            <input id="Post" type="text" class="form-control"
+                   placeholder="Press enter to post comment" />
+            <button type="submit" onclick="SubmitComment()" class="btn btn-default"><i class="fc fc-button"></i> Comment</button>
+        </span>
+    </div>
+</div>
+
+<div class="box-footer">
+    <div id='@ViewBag.AlertId' class="box-footer box-comments">
+        <!-- Comments here-->
+    </div>
+    </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $.ajax({
+            type: 'GET',
+            url: 'http://localhost:54978/api/comment',
+            data: { 'AlertId': '@ViewBag.AlertId' },
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                console.log(data);
+                $("#@ViewBag.AlertId").html('');
+                for (var i = 0; i < data.length; i++) {
+                    var contenthtml = "<div class='box-comment'>" +
+                                        "<img class='img-circle img-sm' src='" + data[i].ImageUrl + "' alt='UserImage'>" +
+                                            "<div class='comment-text'>" +
+                                                "<span class='username'>" +
+                                                    data[i].UserName
+                                                    + "<span class='text-muted pull-right'> " + data[i].DatePost + " </span>" +
+                                                "</span> " +
+                                                    data[i].Post
+                                            + " </div>" +
+
+                                        "</div>";
+                    $(contenthtml).appendTo($("#@ViewBag.AlertId"));
+                }
+
+            },
+            error: function (ex) {
+                console.log(ex);
+            }
+        })
+
+
+    }
+ );
+
+
+    function SubmitComment() {
+        var content = $('#Post').val();
+        var comment = { 'Post': content, 'MemberId': '@Session["userid"]', 'AlertId': '@ViewBag.AlertId' };
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:54978/api/comment',
+            data: JSON.stringify(comment),
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                console.log(data);
+                $("#@ViewBag.AlertId").html('');
+                for (var i = 0; i < data.length; i++) {
+                    var contenthtml = "<div class='box-comment'>" +
+                                        "<img class='img-circle img-sm' src='" + data[i].ImageUrl + "' alt='UserImage'>" +
+                                            "<div class='comment-text'>" +
+                                                "<span class='username'>" +
+                                                    data[i].UserName
+                                                    + "<span class='text-muted pull-right'> " + data[i].DatePost + " </span>" +
+                                                "</span> " +
+                                                    data[i].Post
+                                            + " </div>" +
+
+                                        "</div>";
+                    $(contenthtml).appendTo($("#@ViewBag.AlertId"));
+                }
+                $('#Post').val('');
+            },
+            error: function (ex) {
+                console.log(ex);
+            }
+        })
+    }
+</script>

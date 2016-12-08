@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopLost.Web", "portesdisparus\PeopLost.Web.csproj", "{70515576-94DC-4F7C-B69C-56820E0565E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopLost.Core", "PeopLost.Core\PeopLost.Core.csproj", "{6C9A3F37-A166-48A4-9B76-80F5B8FBD20F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopLost.Data", "PeopLost.Data\PeopLost.Data.csproj", "{6ABAEB8F-A47C-44DA-ADBE-1F3FF32C8912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopLost.Service", "PeopLost.Service\PeopLost.Service.csproj", "{29C17C58-1F0C-497D-9520-C3B8EA1488DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopLost.WebApi", "PeopLost.WebApi\PeopLost.WebApi.csproj", "{29E1515E-51E6-4BCF-B699-CA62C5C4FACE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopLost.Dapper", "PeopLost.Dapper\PeopLost.Dapper.csproj", "{C97B421C-708D-490A-9903-6C7330686D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopLost.SignalRMappingAuth", "PeopLost.SignalRMappingAuth\PeopLost.SignalRMappingAuth.csproj", "{299AD33B-94E9-44FF-8670-A2137C930B68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70515576-94DC-4F7C-B69C-56820E0565E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70515576-94DC-4F7C-B69C-56820E0565E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70515576-94DC-4F7C-B69C-56820E0565E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70515576-94DC-4F7C-B69C-56820E0565E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C9A3F37-A166-48A4-9B76-80F5B8FBD20F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9A3F37-A166-48A4-9B76-80F5B8FBD20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9A3F37-A166-48A4-9B76-80F5B8FBD20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9A3F37-A166-48A4-9B76-80F5B8FBD20F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ABAEB8F-A47C-44DA-ADBE-1F3FF32C8912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ABAEB8F-A47C-44DA-ADBE-1F3FF32C8912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ABAEB8F-A47C-44DA-ADBE-1F3FF32C8912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ABAEB8F-A47C-44DA-ADBE-1F3FF32C8912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C17C58-1F0C-497D-9520-C3B8EA1488DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C17C58-1F0C-497D-9520-C3B8EA1488DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C17C58-1F0C-497D-9520-C3B8EA1488DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C17C58-1F0C-497D-9520-C3B8EA1488DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E1515E-51E6-4BCF-B699-CA62C5C4FACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E1515E-51E6-4BCF-B699-CA62C5C4FACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E1515E-51E6-4BCF-B699-CA62C5C4FACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E1515E-51E6-4BCF-B699-CA62C5C4FACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C97B421C-708D-490A-9903-6C7330686D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C97B421C-708D-490A-9903-6C7330686D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C97B421C-708D-490A-9903-6C7330686D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C97B421C-708D-490A-9903-6C7330686D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299AD33B-94E9-44FF-8670-A2137C930B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299AD33B-94E9-44FF-8670-A2137C930B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299AD33B-94E9-44FF-8670-A2137C930B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299AD33B-94E9-44FF-8670-A2137C930B68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

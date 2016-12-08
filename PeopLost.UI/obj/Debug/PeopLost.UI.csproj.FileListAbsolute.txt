@@ -1,0 +1,6 @@
+C:\Users\NGUESSAN\documents\visual studio 2013\Projects\portesdisparus\PeopLost.UI\bin\PeopLost.UI.dll.config
+C:\Users\NGUESSAN\documents\visual studio 2013\Projects\portesdisparus\PeopLost.UI\bin\PeopLost.UI.dll
+C:\Users\NGUESSAN\documents\visual studio 2013\Projects\portesdisparus\PeopLost.UI\bin\PeopLost.UI.pdb
+C:\Users\NGUESSAN\documents\visual studio 2013\Projects\portesdisparus\PeopLost.UI\obj\Debug\PeopLost.UI.csprojResolveAssemblyReference.cache
+C:\Users\NGUESSAN\documents\visual studio 2013\Projects\portesdisparus\PeopLost.UI\obj\Debug\PeopLost.UI.dll
+C:\Users\NGUESSAN\documents\visual studio 2013\Projects\portesdisparus\PeopLost.UI\obj\Debug\PeopLost.UI.pdb

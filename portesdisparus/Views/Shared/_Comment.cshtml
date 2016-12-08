@@ -1,0 +1,24 @@
+﻿@model IList<PeopLost.Web.Models.CommentModels>
+
+
+<div id='@ViewBag.AlertId' class="box-footer box-comments">
+
+    @foreach (var comment in Model)
+    {
+
+        <div class="box-comment">
+
+            <img class="img-circle img-sm" src="@comment.Member.ImageUrl" alt="User Image">
+            <div class="comment-text">
+                <span class="username">
+                    @comment.Member.UserName
+                    <span class="text-muted pull-right">@comment.DatePost</span>
+                </span>
+                @comment.Post
+            </div>
+
+        </div>
+
+    }
+
+</div>

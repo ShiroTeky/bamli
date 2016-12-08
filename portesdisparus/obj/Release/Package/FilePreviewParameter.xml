@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="bamli" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\portesdisparus\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\portesdisparus\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="bdlostConnectionString-Web.config Connection String" description="" value="Data Source=tcp:bdlost.database.windows.net;Initial Catalog=bdlost;Persist Security Info=True;User ID=bdlostadmin;Password=harD@bi001" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\portesdisparus\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='bdlostConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:bdlost.database.windows.net;Initial Catalog=bdlost;Persist Security Info=True;User ID=bdlostadmin;Password=harD@bi001" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\portesdisparus\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="PeopLost.SignalRMappingAuth.MemberContext-Web.config Connection String" description="" value="Data Source=tcp:bdlost.database.windows.net;Initial Catalog=bdlost;Persist Security Info=True;User ID=bdlostadmin;Password=harD@bi001" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\portesdisparus\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PeopLost.SignalRMappingAuth.MemberContext']/@connectionString" />
+  </parameter>
+  <parameter name="sqlConnString-Web.config Connection String" description="" value="Data Source=tcp:bdlost.database.windows.net,1433;Initial Catalog=bdlost;Persist Security Info=True;User ID=bdlostadmin;Password=harD@bi001" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\portesdisparus\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='sqlConnString']/@connectionString" />
+  </parameter>
+</parameters>

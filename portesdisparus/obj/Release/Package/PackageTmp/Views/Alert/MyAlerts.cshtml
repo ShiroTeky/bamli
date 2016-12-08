@@ -1,0 +1,64 @@
+﻿@model IEnumerable<PeopLost.Dapper.AlertUtils>
+
+@{
+    ViewBag.Title = "MyAlerts";
+}
+
+<h2>MyAlerts</h2>
+
+<p>
+    @Html.ActionLink("Add New Alerts", "Create")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.PersonId)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Caracteristics)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.PersonId)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Country)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Caracteristics)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.AlertId  }) |
+            @Html.ActionLink("Upload Picture", "EditPhoto", new { id = item.PersonId })
+        </td>
+    </tr>
+}
+
+</table>

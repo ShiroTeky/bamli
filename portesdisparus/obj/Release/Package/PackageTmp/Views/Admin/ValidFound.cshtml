@@ -1,0 +1,85 @@
+﻿@model PeopLost.Web.Models.AlertsFoundModel
+
+
+
+<h2>ValidAlert</h2>
+
+
+@{
+    ViewBag.Title = "Valid the Alert";
+}
+@Html.ActionLink("Return to your list", "Alerts")
+<h2>Valid the alert</h2>
+
+
+<div class="col-md-7">
+    <!-- general form elements -->
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Your alert</h3>
+            <div><span class="info alert-info" id="result"></span></div>
+        </div>
+@using (Html.BeginForm("ValidFound", "Admin", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+            @Html.AntiForgeryToken()
+            <div class="box-body">
+                
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Found, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+
+                            <div class="radio-inline">
+                                <label class="control-label col-md-3">
+                                    @Html.RadioButtonFor(model => model.Found, true,true) @Html.Label("Found")
+                                </label>
+                                <label class="control-label col-md-3">
+                                    @Html.RadioButtonFor(model => model.Found, false,false) @Html.Label("Not Found")
+                                </label>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="box-footer">
+                    <div class="col-md-offset-4">
+                        <button type="submit" class="btn btn-primary">We Found!</button>
+                    </div>
+                </div>
+            </div>
+}
+    </div>
+</div>
+@*<script type="text/javascript">
+    var concrete;
+    // Save Alert using Ajax.
+    function EditAlert() {
+        var model;
+        
+        if ($("#ConcreteOk").is(":checked")) {
+            concrete = true;
+        }
+        if ($("#ConcreteNo").is(":checked")) {
+            concrete = false;
+        }
+
+        //Bind the model AlertModel
+        model = {
+            'ConcreteAlert':concrete
+        };
+        $.ajax({
+            type: 'PUT',
+            url: 'http://localhost:54978/api/alert/' + '@ViewBag.PersonId',
+            data: JSON.stringify(model),
+            headers: {
+                "Content-Type": "application/json;charset=utf-8", "X-HTTP-Method-Override": "PUT"
+            },
+            success: function (value) {
+                console.log(value);
+                $('#result').html(value);
+            },
+            error: function (ex) {
+                console.log(ex);
+                $('#result').html(ex);
+            }
+        });
+    }
+</script>*@

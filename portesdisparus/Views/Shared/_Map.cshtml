@@ -1,0 +1,66 @@
+﻿<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" onclick="closemodal()" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title">Dernières positions</h4>
+            </div>
+            <div class="modal-body">
+                <div id="map">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="closemodal()" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button type="button" onclick="SavePost()" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<script async defer=""
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYqM6BUsOsHcp5Ua0Zz2_4_lVEPH3girM">
+
+</script>
+
+<script type="text/javascript">
+    var newMarkers = new Array();
+
+    // Close the modal MAP
+    function closemodal() {
+        $('.modal').css('display', 'none');
+    }
+
+    // Save the New Position
+    // Send data to the controller
+    function SavePost() {
+        var stringData = JSON.stringify(newMarkers);
+        var results = JSON.parse(stringData);
+        console.log(results[0]);
+
+        for (var i = 0; i < results.length; i++)
+        {
+
+            var lat = results[i].lat;
+            var lng = results[i].lng;
+            var personpoints = { 'PersonId': '@ViewBag.PersonId','MemberId':'@Session["userid"]','Latitude': lat, 'Longitude': lng };
+            $.ajax({
+                type: 'POST',
+                url: 'http://localhost:54978/api/map',
+                data: JSON.stringify(personpoints),
+                contentType: "application/json;charset=utf-8",
+                success: function (value) {
+                    console.log(value);
+                },
+                error: function (ex) {
+                    console.log(ex);
+                }
+            })
+
+        }
+    }
+</script>

@@ -1,0 +1,56 @@
+﻿@model System.Collections.Generic.List<string>
+@{
+    ViewBag.Title = "Home Page";
+}
+<h3>PREMIERE PLATEFORME COMMUNNAUTAIRE DE RECHERCHE DES PERSONNES DISPARUES</h3>
+<section class="slider">
+    <div class="flexslider">
+        <ul class="slides">
+            @foreach(string item in Model)
+            { 
+            <li>
+                <img width="300" height="200" src="@item" />
+            </li>
+            }
+                    
+        </ul>    
+    </div>
+ </section>
+<script type="text/javascript">
+        // Scrollspy fluide
+        $(function () {
+        $('header a').on('click', function(e) {
+        e.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+        scrollTop: $(this.hash).offset().top
+        }, 1000, function(){
+        window.location.hash = hash;
+        });
+        });
+        });
+ </script>
+    @* FlexSlider*@
+<script defer='', src='/scripts/jquery.flexslider.js'></script>
+ <script type='text/javascript'>
+        $(function () {
+        SyntaxHighlighter.all();
+        });
+        $(window).load(function () {
+        $('.flexslider').flexslider({
+        animation: "slide",
+        start: function (slider) {
+        $('body').removeClass('loading');
+        }
+        });
+        });
+ </script>
+    @* Syntax Highlighter*@
+<script type='text/javascript' src='/scripts/shCore.js'></script>
+ <script type='text/javascript' src='/scripts/shBrushXml.js'></script>
+  <script type='text/javascript' src='/scripts/shBrushJScript.js'></script>
+  <script type='text/javascript' src='/scripts/shBrushCss.js'></script>
+    @* Optional FlexSlider Additions*@
+  <script src='/scripts/jquery.easing.js'></script>
+  <script src='/scripts/jquery.mousewheel.js'></script>
+  <script defer='' src='/scripts/demo.js'></script>

@@ -1,0 +1,10 @@
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.SignalRMappingAuth\bin\Debug\PeopLost.SignalRMappingAuth.dll.config
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.SignalRMappingAuth\bin\Debug\PeopLost.SignalRMappingAuth.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.SignalRMappingAuth\bin\Debug\PeopLost.SignalRMappingAuth.pdb
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.SignalRMappingAuth\bin\Debug\EntityFramework.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.SignalRMappingAuth\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.SignalRMappingAuth\bin\Debug\EntityFramework.xml
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.SignalRMappingAuth\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.SignalRMappingAuth\obj\Debug\PeopLost.SignalRMappingAuth.csprojResolveAssemblyReference.cache
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.SignalRMappingAuth\obj\Debug\PeopLost.SignalRMappingAuth.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.SignalRMappingAuth\obj\Debug\PeopLost.SignalRMappingAuth.pdb

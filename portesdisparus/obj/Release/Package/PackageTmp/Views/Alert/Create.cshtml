@@ -1,0 +1,274 @@
+﻿@model PeopLost.Web.Models.AlertModels
+
+@{
+    ViewBag.Title = "Post the alert";
+}
+@Html.ActionLink("Return to the alert", "List")
+<h2>Create an alert</h2>
+
+
+<div class="col-md-7">
+    <!-- general form elements -->
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Votre Alerte</h3>
+            <div><span class="info" id="result"></span></div>
+        </div>
+        <form method="post" class="form-horizontal" role="form">
+
+            @*<form method="post" class="form-horizontal">*@
+
+            <div class="box-body">
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Person.FirstName, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Person.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Person.FirstName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Person.LastName, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Person.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Person.LastName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Person.Gender, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                            <label class="control-label radio-inline">
+                                @Html.EditorFor(model => model.Person.Gender, new { htmlAttributes = new { @type = "radio", @id = "Person_GenderF", @value = "F" } }) Femme
+                            </label>
+                            <label class="control-label radio-inline">
+                                @Html.EditorFor(model => model.Person.Gender, new { htmlAttributes = new { @type = "radio", @id = "Person_GenderH", @value = "H" } }) Homme
+                            </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Person.Caracteristics, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.TextAreaFor(model => model.Person.Caracteristics, htmlAttributes : new { @class = "form-control",@rows="3"  })
+                        @Html.ValidationMessageFor(model => model.Person.Caracteristics, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Person.Address, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Person.Address, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Person.Address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.LooserAddress, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.LooserAddress, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.LooserAddress, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Post, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.TextAreaFor(model => model.Post, htmlAttributes :new { @class = "form-control", @rows = "3" } )
+                        @Html.ValidationMessageFor(model => model.Post, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DayDisappear, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            @Html.EditorFor(model => model.DayDisappear, new { htmlAttributes = new { @class = "form-control pull-left", @id = "datepicker" } })
+                            @Html.ValidationMessageFor(model => model.DayDisappear, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Person.YearsOld, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Person.YearsOld, new { htmlAttributes = new { @class = "form-control", @type = "number" } })
+                        @Html.ValidationMessageFor(model => model.Person.YearsOld, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Person.Country, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Person.Country, new { htmlAttributes = new { @class = "form-control", @type = "text" } })
+                        @Html.ValidationMessageFor(model => model.Person.Country, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Person.City, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Person.City, new { htmlAttributes = new { @class = "form-control", @type = "text" } })
+                        @Html.ValidationMessageFor(model => model.Person.City, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="box-footer">
+                    <div class="col-md-offset-4">
+                        <button type="submit" onclick="SubmitAlert()" class="btn btn-primary">Alerter</button>
+                    </div>
+                </div>
+            </div>
+
+            @*</form>*@
+        </form>
+    </div>
+</div>
+
+@* Display the Map *@
+<div class="col-md-5">
+    <div id="map">
+
+    </div>
+</div>
+
+@Scripts.Render("~/datepicker/js")
+@Scripts.Render("~/dist/js")
+
+<script async defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYqM6BUsOsHcp5Ua0Zz2_4_lVEPH3girM&callback=initMap"></script>
+<script>
+    $(function () {
+        //Date picker
+        $('#datepicker').datepicker({
+            autoclose: true
+        });
+    });
+</script>
+<script type="text/javascript">
+    var newMarkers = new Array();
+    // Where all the fun happens
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 5.865427, lng: -4.196123 },
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.G_NORMAL_MAP
+        });
+        // Get new position
+        map.addListener('click', function (e) {
+            placeMarkerAndPanTo(e.latLng, map);
+        });
+        var marker = new google.maps.Marker({
+            position: { lat: 5.865427, lng: -4.196123 },
+            map: map
+        });
+
+        marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+
+        // finally hook up an "OnClick" listener to the map so it pops up out info-window when the marker-pin is clicked!
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+        // a sample list of JSON encoded data of places to visit in Tunisia
+        // you can either make up a JSON list server side, or call it from a controller using JSONResult
+        // Using the JQuery "each" selector to iterate through the JSON list and drop marker pins
+
+    }
+    // Close the modal MAP
+    function closemodal() {
+        $('.modal').css('display', 'none');
+    }
+
+    // Set the new marker on the map
+    function placeMarkerAndPanTo(latLng, map) {
+        var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+        });
+        map.panTo(latLng);
+        newMarkers.push(latLng);
+    }
+
+    // Save the New Position
+    // Send data to the controller
+    function SavePost() {
+        var stringData = JSON.stringify(newMarkers);
+        var results = JSON.parse(stringData);
+        console.log(results[0]);
+        for (var i = 0; i < results.length; i++) {
+            var lat = results[i].lat;
+            var lng = results[i].lng;
+            var personpoints = { 'PersonId': '@ViewBag.PersonId','MemberId':'@Session["userid"]', 'Latitude': lat, 'Longitude': lng };
+            $.ajax({
+                type: 'POST',
+                url: 'http://localhost:54978/api/map',
+                data: JSON.stringify(personpoints),
+                contentType: "application/json;charset=utf-8",
+                success: function (value) {
+                    console.log(value);
+                },
+                error: function (ex) {
+                    console.log(ex);
+                }
+            })
+
+        }
+    }
+</script>
+<script type="text/javascript">
+    var pathblob;
+    // Save Alert using Ajax.
+    function SubmitAlert()
+    {
+        var model;
+        //Get Value from Alert
+        var personFirstName = $('#Person_FirstName').val();
+        var personLastName = $('#Person_LastName').val();
+        var yearsOld = $('#Person_YearsOld').val();
+        var dateDisappear = $('#datepicker').val();
+        var memberid = '@Session["userid"]';
+        var gender;
+        if ($("#Person_GenderH").is(":checked"))
+        {
+            gender = "H";
+        }
+        if ($("#Person_GenderF").is(":checked"))
+        {
+            gender = "F";
+        }
+
+        var post = $('#Post').val();
+        var looserAddress = $('#LooserAddress').val();
+        var Address = $('#Person_Address').val();
+
+        var country = $('#Person_Country').val();
+        var caracteristics = $('#Person_Caracteristics').val();
+        //Town
+        var city = $('#Person_City').val();
+
+        //Bind the model AlertModel
+        model = {
+            'FirstName': personFirstName, 'LastName': personLastName,
+            'Gender': gender,
+            'YearsOld': yearsOld, 'PersonId': '@ViewBag.PersonId', 'LooserAddress': looserAddress, 'Address': Address,
+                'Country': country, 'City': city,
+                'DayDisappear': dateDisappear, 'Caracteristics': caracteristics, 'MemberId': memberid,
+                'Post': post
+        };
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:54978/api/alert',
+            data: JSON.stringify(model),
+            contentType: "application/json;charset=utf-8",
+            success: function (value) {
+                console.log(value);
+                $('#result').html(value);
+            },
+            error: function (ex) {
+                console.log(ex);
+                $('#result').html(ex);
+            }
+        })
+
+        SavePost();
+    }
+</script>
+
