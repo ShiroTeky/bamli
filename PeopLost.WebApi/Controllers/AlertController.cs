@@ -17,7 +17,7 @@ using Newtonsoft.Json;
 
 namespace PeopLost.WebApi.Controllers
 {
-    [EnableCors(origins: "http://localhost:54978", headers: "*", methods: "*")]
+    [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "*")]
     public class AlertController : ApiController
     {
         private IAlertService _alertservice;
@@ -77,7 +77,7 @@ namespace PeopLost.WebApi.Controllers
 
         // POST: api/Alert
         [HttpPost]
-        [EnableCors(origins: "http://localhost:54978", headers: "*", methods: "post,options")]
+        [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "post,options")]
         public  HttpResponseMessage Post([FromBody]AlertModels model)
         {
             try 

@@ -233,7 +233,7 @@
             var personpoints = { 'PersonId': '@ViewBag.PersonId','MemberId':'@Session["userid"]', 'Latitude': lat, 'Longitude': lng };
             $.ajax({
                 type: 'PUT',
-                url: 'http://localhost:54978/api/map',
+                url: 'http://bamliapi.azurewebsites.net/api/map',
                 data: JSON.stringify(personpoints),
                 headers: {
                     "Content-Type":"application/json;charset=utf-8", "X-HTTP-Method-Override": "PUT"
@@ -288,7 +288,7 @@
         };
         $.ajax({
             type: 'PUT',
-            url: 'http://localhost:54978/api/alert/'+'@ViewBag.PersonId',
+            url: 'http://bamliapi.azurewebsites.net/api/alert/' + '@ViewBag.PersonId',
             data: JSON.stringify(model),
             headers: {
                 "Content-Type": "application/json;charset=utf-8", "X-HTTP-Method-Override": "PUT"

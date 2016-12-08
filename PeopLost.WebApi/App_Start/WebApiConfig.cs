@@ -21,7 +21,7 @@ namespace PeopLost.WebApi
         {
 
 
-            var cors = new EnableCorsAttribute("http://localhost:54978","*","*");
+            var cors = new EnableCorsAttribute("http://bamliapi.azurewebsites.net", "*", "*");
             config.EnableCors(cors);
 
 

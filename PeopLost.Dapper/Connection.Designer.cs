@@ -25,8 +25,8 @@ namespace PeopLost.Dapper {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDb)\\v11.0;Initial Catalog=bdlostConnectionString;Integrated Sec" +
-            "urity=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=bdlostsqlvm2037.cloudapp.net,57500;Initial Catalog=bdlost;Persist Sec" +
+            "urity Info=True;User ID=bamliuser;Password=harD@bi001harD@bi001")]
         public string bdlostConnectionString {
             get {
                 return ((string)(this["bdlostConnectionString"]));

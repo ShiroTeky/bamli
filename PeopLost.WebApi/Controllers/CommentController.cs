@@ -13,7 +13,7 @@ using System.Net;
 
 namespace PeopLost.WebApi.Controllers
 {
-    [EnableCors(origins: "http://localhost:54978", headers: "*", methods: "*")]
+    [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "*")]
     public class CommentController : ApiController
     {
         ICommentService _commentservice;
@@ -34,7 +34,7 @@ namespace PeopLost.WebApi.Controllers
         }
 
         [HttpGet]
-        [EnableCors(origins: "http://localhost:54978", headers: "*", methods: "post,options")]
+        [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "post,options")]
         public HttpResponseMessage Comment(string AlertId)
         {
             try { 
@@ -55,7 +55,7 @@ namespace PeopLost.WebApi.Controllers
         }
 
         [HttpPost]
-        [EnableCors(origins: "http://localhost:54978", headers: "*", methods: "post,options")]
+        [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "post,options")]
         public HttpResponseMessage SaveComment(CommentModels comment)
         {
             Comment newComment = new Comment();

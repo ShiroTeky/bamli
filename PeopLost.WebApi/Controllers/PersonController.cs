@@ -13,7 +13,7 @@ using System.Web.Http.Cors;
 
 namespace WebApplication1.Controllers
 {
-    [EnableCors(origins: "http://localhost:54978", headers: "*", methods: "*")]
+    [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "*")]
     public class PersonController : ApiController
     {
         private IAlertService _alertservice;

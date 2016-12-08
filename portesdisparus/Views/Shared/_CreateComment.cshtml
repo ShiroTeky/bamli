@@ -21,7 +21,7 @@
 
         $.ajax({
             type: 'GET',
-            url: 'http://localhost:54978/api/comment',
+            url: 'http://bamliapi.azurewebsites.net/api/comment',
             data: { 'AlertId': '@ViewBag.AlertId' },
             contentType: "application/json;charset=utf-8",
             success: function (data) {
@@ -58,7 +58,7 @@
         var comment = { 'Post': content, 'MemberId': '@Session["userid"]', 'AlertId': '@ViewBag.AlertId' };
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:54978/api/comment',
+            url: 'http://bamliapi.azurewebsites.net/api/comment',
             data: JSON.stringify(comment),
             contentType: "application/json;charset=utf-8",
             success: function (data) {

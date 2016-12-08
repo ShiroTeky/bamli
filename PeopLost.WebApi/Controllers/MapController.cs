@@ -13,7 +13,7 @@ using Newtonsoft.Json;
 
 namespace PeopLost.WebApi.Controllers
 {
-    [EnableCors(origins: "http://localhost:54978", headers: "*", methods: "*")]
+    [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "*")]
     public class MapController : ApiController
     {
         private IPersonPointGeoService _pointservice;
@@ -30,7 +30,7 @@ namespace PeopLost.WebApi.Controllers
         }
 
         // GET: api/Map/5
-        [EnableCors(origins: "http://localhost:58755/", headers: "*", methods: "*")]
+        [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "*")]
         [HttpGet]
         public IList<PersonPointGeo> Get(string id)
         {
@@ -45,7 +45,7 @@ namespace PeopLost.WebApi.Controllers
         /// <param name="personpoints"></param>
         /// <returns></returns>
         [HttpPost]
-        [EnableCors(origins: "http://localhost:54978", headers: "*", methods: "post,options")]
+        [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "post,options")]
         public HttpResponseMessage SavePost(PersonPoints personpoints)
         {
             try

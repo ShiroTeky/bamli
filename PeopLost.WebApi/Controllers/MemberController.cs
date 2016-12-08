@@ -12,7 +12,7 @@ using System.Web.Http.Cors;
 
 namespace WebApplication1.Controllers
 {
-    [EnableCors(origins: "http://localhost:54978", headers: "*", methods: "*")]
+    [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "*")]
     public class MemberController : ApiController
     {
         private IMemberService _memberservice;
@@ -25,7 +25,7 @@ namespace WebApplication1.Controllers
 
 
         [HttpPost]
-        [EnableCors(origins: "http://localhost:54978", headers: "*", methods: "post,options")]
+        [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "post,options")]
         public HttpResponseMessage SaveMember(MemberModels model)
         {
             try
