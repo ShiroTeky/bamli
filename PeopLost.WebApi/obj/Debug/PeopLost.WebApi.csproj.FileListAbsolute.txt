@@ -140,10 +140,10 @@ C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Newtonsoft.Json.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Spatial.xml
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.Http.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.Http.Cors.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Net.Http.Formatting.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.Helpers.xml
-C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.Http.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.Http.WebHost.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.Mvc.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.Optimization.xml
