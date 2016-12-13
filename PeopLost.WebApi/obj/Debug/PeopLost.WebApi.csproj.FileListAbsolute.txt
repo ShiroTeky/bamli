@@ -80,6 +80,7 @@ C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Microsoft.Azure.AppService.ApiApps.Service.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Microsoft.Azure.KeyVault.Core.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Microsoft.Data.Edm.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Microsoft.Data.OData.dll
@@ -102,6 +103,8 @@ C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\PeopLost.Dapper.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\PeopLost.Data.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\PeopLost.Service.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Swashbuckle.Core.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Net.Http.Formatting.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Spatial.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.Cors.dll
@@ -116,6 +119,7 @@ C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.WebPages.Deployment.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.WebPages.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\WebActivatorEx.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\WebGrease.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Dapper.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\PeopLost.Core.pdb
@@ -134,6 +138,7 @@ C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Microsoft.WindowsAzure.Storage.pdb
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Microsoft.WindowsAzure.Storage.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Newtonsoft.Json.xml
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Spatial.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Web.Http.Cors.xml
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Net.Http.Formatting.xml

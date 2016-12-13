@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="bamliapi" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\PeopLost\.WebApi\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\PeopLost\.WebApi\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="bdlostConnectionString-Web.config Connection String" description="" value="Data Source=bdlostsqlvm2037.cloudapp.net,57500;Initial Catalog=bdlost;Persist Security Info=True;User ID=bamliuser;Password=harD@bi001harD@bi001" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\PeopLost\.WebApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='bdlostConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=bdlostsqlvm2037.cloudapp.net,57500;Initial Catalog=bdlost;Persist Security Info=True;User ID=bamliuser;Password=harD@bi001harD@bi001" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\PeopLost\.WebApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
