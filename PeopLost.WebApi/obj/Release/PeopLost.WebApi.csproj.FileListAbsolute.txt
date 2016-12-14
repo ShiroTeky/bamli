@@ -34,7 +34,6 @@ C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\PeopLost.Dapper.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\PeopLost.Data.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\PeopLost.Service.dll
-C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Swashbuckle.Core.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Net.Http.Formatting.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\System.Spatial.dll

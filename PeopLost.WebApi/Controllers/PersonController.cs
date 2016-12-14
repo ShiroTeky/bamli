@@ -11,7 +11,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
-namespace WebApplication1.Controllers
+namespace PeopLost.WebApi.Controllers
 {
     [EnableCors(origins: "http://bamliapi.azurewebsites.net", headers: "*", methods: "*")]
     public class PersonController : ApiController
