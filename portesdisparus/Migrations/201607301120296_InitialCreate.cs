@@ -1,4 +1,4 @@
-namespace portesdisparus.Migrations
+namespace PeopLost.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

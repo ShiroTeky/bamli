@@ -1,5 +1,5 @@
 ﻿using PeopLost.Web;
-using portesdisparus.Notifications;
+using PeopLost.Notifications;
 using System;
 using System.Collections.Generic;
 using System.Configuration;

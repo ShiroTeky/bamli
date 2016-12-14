@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>portesdisparus</RootNamespace>
-    <AssemblyName>portesdisparus</AssemblyName>
+    <RootNamespace>PeopLost</RootNamespace>
+    <AssemblyName>PeopLost</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -1151,7 +1151,6 @@
     <Content Include="fonts\flexslider-icon.eot" />
     <Content Include="fonts\flexslider-icon.ttf" />
     <Content Include="fonts\flexslider-icon.woff" />
-    <None Include="Properties\PublishProfiles\bamli.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Controllers\alertController.js" />
     <Content Include="Scripts\Controllers\commentController.js" />

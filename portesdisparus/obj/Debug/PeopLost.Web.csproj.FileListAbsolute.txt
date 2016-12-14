@@ -1,6 +1,6 @@
-C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\portesdisparus.dll.config
-C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\portesdisparus.dll
-C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\portesdisparus.pdb
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\PeopLost.dll.config
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\PeopLost.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\PeopLost.pdb
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\Antlr3.Runtime.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\Autofac.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\Autofac.Integration.Mvc.dll
@@ -130,7 +130,7 @@ C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdis
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\obj\Debug\PeopLost.Web.csprojResolveAssemblyReference.cache
-C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\obj\Debug\portesdisparus.Migrations.InitialCreate.resources
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\obj\Debug\PeopLost.Migrations.InitialCreate.resources
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\obj\Debug\PeopLost.Web.csproj.GenerateResource.Cache
-C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\obj\Debug\portesdisparus.dll
-C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\obj\Debug\portesdisparus.pdb
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\obj\Debug\PeopLost.dll
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\obj\Debug\PeopLost.pdb

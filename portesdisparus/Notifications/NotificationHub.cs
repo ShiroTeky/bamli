@@ -16,7 +16,7 @@ using PeopLost.SignalRMappingAuth;
 using System.Collections.Generic;
 
 
-namespace portesdisparus.Notifications
+namespace PeopLost.Notifications
 {
     //[Authorize] 
     [HubName("notificationHub")]

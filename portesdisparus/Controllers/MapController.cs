@@ -9,7 +9,7 @@ using PeopLost.Service.Maps;
 using PeopLost.Models;
 using PeopLost.Core.Domain.Maps;
 
-namespace portesdisparus.Controllers
+namespace PeopLost.Controllers
 {
     public class MapController : Controller
     {

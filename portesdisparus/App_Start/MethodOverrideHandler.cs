@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace portesdisparus.App_Start
+namespace PeopLost.App_Start
 {
     public class MethodOverrideHandler:DelegatingHandler
     {

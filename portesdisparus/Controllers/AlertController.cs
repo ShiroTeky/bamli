@@ -18,7 +18,7 @@ using PeopLost.Service.Pictures;
 using System.Threading.Tasks;
 
 
-namespace portesdisparus.Controllers
+namespace PeopLost.Controllers
 {
     public class AlertController : Controller
     {

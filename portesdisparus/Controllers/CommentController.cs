@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using PeopLost.Service.Alertes;
 
-namespace portesdisparus.Controllers
+namespace PeopLost.Controllers
 {
     public class CommentController : Controller
     {

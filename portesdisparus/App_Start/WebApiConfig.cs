@@ -1,10 +1,10 @@
-﻿using portesdisparus.App_Start;
+﻿using PeopLost.App_Start;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace portesdisparus
+namespace PeopLost
 {
     public static class WebApiConfig
     {

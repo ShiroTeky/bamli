@@ -8,7 +8,7 @@ using PeopLost.Core.Domain.Persons;
 using PeopLost.Data;
 using PeopLost.Service.Persons;
 
-namespace portesdisparus.Controllers
+namespace PeopLost.Controllers
 {
     public class PersonController : Controller
     {

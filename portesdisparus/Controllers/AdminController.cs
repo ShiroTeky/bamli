@@ -16,7 +16,7 @@ using PeopLost.Dapper;
 using PeopLost.Service.Members;
 using PeopLost.Core.Domain.Members;
 
-namespace portesdisparus.Controllers
+namespace PeopLost.Controllers
 {
     public class AdminController : Controller
     {
