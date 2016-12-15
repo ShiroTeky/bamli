@@ -137,3 +137,4 @@ C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\obj\Release\PeopLost.WebApi.csprojResolveAssemblyReference.cache
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\obj\Release\WebApplication1.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\obj\Release\WebApplication1.pdb
+C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.WebApi\bin\Swashbuckle.Core.dll

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="Microsoft-ApiAppfc91002512d44c0391bd895d83078117" tags="IisApp">
+  <parameter name="IIS Web Application Name" description="" value="bamliapi" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\PeopLost\.WebApi\\obj\\Release\\Package\\PackageTmp$" />
     <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\NGUESSAN\\Documents\\Visual\ Studio\ 2013\\Projects\\portesdisparus\\PeopLost\.WebApi\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
