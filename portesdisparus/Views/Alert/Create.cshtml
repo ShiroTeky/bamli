@@ -199,7 +199,7 @@
             var personpoints = { 'PersonId': '@ViewBag.PersonId','MemberId':'@Session["userid"]', 'Latitude': lat, 'Longitude': lng };
             $.ajax({
                 type: 'POST',
-                url: 'http://bamliapi.azurewebsites.net/api/map',
+                url: '/api/map',
                 data: JSON.stringify(personpoints),
                 contentType: "application/json;charset=utf-8",
                 success: function (value) {
@@ -255,7 +255,7 @@
         };
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:54978/api/alert',
+            url: '/api/alert',
             data: JSON.stringify(model),
             contentType: "application/json;charset=utf-8",
             success: function (value) {
