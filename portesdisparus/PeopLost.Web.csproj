@@ -1152,10 +1152,6 @@
     <Content Include="fonts\flexslider-icon.ttf" />
     <Content Include="fonts\flexslider-icon.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\Controllers\alertController.js" />
-    <Content Include="Scripts\Controllers\commentController.js" />
-    <Content Include="Scripts\Controllers\mapController.js" />
-    <Content Include="Scripts\Controllers\memberController.js" />
     <Content Include="Scripts\gmaps.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
