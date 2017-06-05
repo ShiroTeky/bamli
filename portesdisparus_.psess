@@ -20,7 +20,7 @@
       <PdhCountersRate>500</PdhCountersRate>
       <PdhCounters>
         <PdhCounter>\Disque physique(_Total)\Longueur moyenne de file d’attente du disque</PdhCounter>
-        <PdhCounter>\M&amp;amp;amp;#233;moire\Pages/s</PdhCounter>
+        <PdhCounter>\M&amp;amp;amp;amp;amp;#233;moire\Pages/s</PdhCounter>
         <PdhCounter>\Processeur(_Total)\% temps processeur</PdhCounter>
       </PdhCounters>
     </PdhSettings>
@@ -36,7 +36,7 @@
   </PostinstrumentEvent>
   <Binaries>
     <ProjBinary>
-      <Path>PeopLost\\bin\PeopLost.dll</Path>
+      <Path>portesdisparus\\bin\PeopLost.dll</Path>
       <ArgumentTimestamp>01/01/0001 00:00:00</ArgumentTimestamp>
       <Instrument>true</Instrument>
       <Sample>true</Sample>
@@ -50,7 +50,7 @@
       <LaunchMethod>Browser</LaunchMethod>
       <LaunchUrl>http://localhost:58755/</LaunchUrl>
       <SiteUrl>http://localhost:58755/</SiteUrl>
-      <LocalPath>C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\PeopLost\PeopLost\</LocalPath>
+      <LocalPath>D:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\</LocalPath>
       <VRoot>
       </VRoot>
       <NetAppHost>IIS</NetAppHost>
@@ -63,8 +63,40 @@
       <PostinstrumentEvent>
         <InstrEventExclude>false</InstrEventExclude>
       </PostinstrumentEvent>
-      <ProjRef>{70515576-94DC-4F7C-B69C-56820E0565E2}|PeopLost\PeopLost.Web.csproj</ProjRef>
-      <ProjPath>PeopLost\PeopLost.Web.csproj</ProjPath>
+      <ProjRef>{70515576-94DC-4F7C-B69C-56820E0565E2}|portesdisparus\PeopLost.Web.csproj</ProjRef>
+      <ProjPath>portesdisparus\PeopLost.Web.csproj</ProjPath>
+      <ProjName>PeopLost.Web</ProjName>
+    </ProjBinary>
+    <ProjBinary>
+      <Path>portesdisparus\\bin\PeopLost.dll</Path>
+      <ArgumentTimestamp>01/01/0001 00:00:00</ArgumentTimestamp>
+      <Instrument>true</Instrument>
+      <Sample>true</Sample>
+      <ExternalWebsite>false</ExternalWebsite>
+      <InteractionProfilingEnabled>false</InteractionProfilingEnabled>
+      <IsLocalJavascript>false</IsLocalJavascript>
+      <IsWindowsStoreApp>false</IsWindowsStoreApp>
+      <IsWWA>false</IsWWA>
+      <LaunchProject>true</LaunchProject>
+      <OverrideProjectSettings>false</OverrideProjectSettings>
+      <LaunchMethod>Browser</LaunchMethod>
+      <LaunchUrl>http://localhost:58755/</LaunchUrl>
+      <SiteUrl>http://localhost:58755/</SiteUrl>
+      <LocalPath>D:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\portesdisparus\</LocalPath>
+      <VRoot>
+      </VRoot>
+      <NetAppHost>IIS</NetAppHost>
+      <NetBrowser>InternetExplorer</NetBrowser>
+      <ExcludeSmallFuncs>true</ExcludeSmallFuncs>
+      <JScriptProfilingEnabled>false</JScriptProfilingEnabled>
+      <PreinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PreinstrumentEvent>
+      <PostinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PostinstrumentEvent>
+      <ProjRef>{70515576-94DC-4F7C-B69C-56820E0565E2}|portesdisparus\PeopLost.Web.csproj</ProjRef>
+      <ProjPath>portesdisparus\PeopLost.Web.csproj</ProjPath>
       <ProjName>PeopLost.Web</ProjName>
     </ProjBinary>
   </Binaries>
@@ -75,7 +107,7 @@
   </Reports>
   <Launches>
     <ProjBinary>
-      <Path>:PB:{70515576-94DC-4F7C-B69C-56820E0565E2}|PeopLost\PeopLost.Web.csproj</Path>
+      <Path>:PB:{70515576-94DC-4F7C-B69C-56820E0565E2}|portesdisparus\PeopLost.Web.csproj</Path>
     </ProjBinary>
   </Launches>
 </VSPerformanceSession>
