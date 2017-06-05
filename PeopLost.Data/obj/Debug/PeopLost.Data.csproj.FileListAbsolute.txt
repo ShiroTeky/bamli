@@ -7,3 +7,12 @@ C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\obj\Debug\PeopLost.Data.csprojResolveAssemblyReference.cache
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\obj\Debug\PeopLost.Data.dll
 C:\Users\NGUESSAN\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\obj\Debug\PeopLost.Data.pdb
+C:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\PeopLost.Data.dll
+C:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\PeopLost.Data.pdb
+C:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\EntityFramework.dll
+C:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\PeopLost.Core.dll
+C:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\PeopLost.Core.pdb
+C:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\bin\Debug\EntityFramework.xml
+C:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\obj\Debug\PeopLost.Data.csprojResolveAssemblyReference.cache
+C:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\obj\Debug\PeopLost.Data.dll
+C:\Users\hubert tecleky\Documents\Visual Studio 2013\Projects\portesdisparus\PeopLost.Data\obj\Debug\PeopLost.Data.pdb
