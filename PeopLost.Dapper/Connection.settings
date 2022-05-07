@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="bdlostConnectionString" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Data Source=bdlostsqlvm2037.cloudapp.net,57500;Initial Catalog=bdlost;Persist Security Info=True;User ID=bamliuser;Password=harD@bi001harD@bi001</Value>
+      <Value Profile="(Default)">Data Source=bdlostsqlvm2037.cloudapp.net,57500;Initial Catalog=bdlost;Persist Security Info=True;</Value>
     </Setting>
   </Settings>
 </SettingsFile>
